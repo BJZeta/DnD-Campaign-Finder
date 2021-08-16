@@ -12,10 +12,22 @@ export default function Header() {
         </Link>
       </div>
 
-      <nav>
+      <nav className={styles.navbar}>
         <ul>
           <li>
-            <li href="/games"></li>
+            <Link href="/events">
+              <a>EVENTS</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/groups">
+              <a>GROUPS</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/login">
+              <a>LOGIN</a>
+            </Link>
           </li>
         </ul>
       </nav>

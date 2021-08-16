@@ -1,0 +1,11 @@
+.footer {
+  margin: 100px 0 40px;
+  text-align: center;
+  background-color: crimson;
+  border-top: 3px #454545;
+}
+
+.footer p {
+  margin: 5px 0;
+  padding: 25px 0;
+}
