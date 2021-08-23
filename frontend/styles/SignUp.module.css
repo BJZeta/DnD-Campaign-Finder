@@ -1,3 +1,44 @@
 .signupScreen h1 {
   text-align: center;
 }
+
+.signupScreen form {
+  justify-content: center;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.inputs {
+  display: block;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 2em;
+  border-radius: 3px;
+}
+
+.signupScreen button {
+  float: right;
+}
+
+@media screen and (max-width: 960px) {
+  .signupScreen form {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .signupScreen form {
+    max-width: 100%;
+  }
+
+  .signupScreen button {
+    float: none;
+    width: 70%;
+    margin-left: 20px;
+  }
+}
