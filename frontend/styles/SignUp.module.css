@@ -23,6 +23,22 @@
 
 .signupScreen button {
   float: right;
+  color: #ffeded;
+  background-color: crimson;
+  padding: 5px 10px;
+  border: dimgray 2px solid;
+  border-radius: 10px;
+}
+
+.login_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.login_link a {
+  color: crimson;
 }
 
 @media screen and (max-width: 960px) {
@@ -38,7 +54,11 @@
 
   .signupScreen button {
     float: none;
-    width: 70%;
+    width: 90%;
     margin-left: 20px;
+  }
+
+  .login_link {
+    width: max-content;
   }
 }

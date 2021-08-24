@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import Layout from "../components/Layout";
 import styles from "../styles/SignUp.module.css";
 
@@ -17,7 +18,7 @@ export default function SignUp() {
 
         <form onSubmit={handleSubmitAccount}>
           <div className={styles.inputs}>
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
@@ -28,7 +29,7 @@ export default function SignUp() {
             />
           </div>
           <div className={styles.inputs}>
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
@@ -39,7 +40,7 @@ export default function SignUp() {
             />
           </div>
           <div className={styles.inputs}>
-            <label for="password">Password</label>
+            <label htmlFor="password">Password</label>
             <input
               type="text"
               id="password"
@@ -50,7 +51,7 @@ export default function SignUp() {
             />
           </div>
           <div className={styles.inputs}>
-            <label for="confirmPassword">Confirm Password</label>
+            <label htmlFor="confirmPassword">Confirm Password</label>
             <input
               type="text"
               id="confirmPassword"
@@ -62,6 +63,14 @@ export default function SignUp() {
           </div>
           <button type="submit">Enter New Account</button>
         </form>
+        <div className={styles.login_link}>
+          <p>
+            Already have an account?{" "}
+            <Link href="/login">
+              <a>Sign In Here</a>
+            </Link>
+          </p>
+        </div>
       </div>
     </Layout>
   );
