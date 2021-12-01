@@ -17,3 +17,9 @@ export default function Layout({ title, keywords, description, children }) {
     </div>
   );
 }
+
+Layout.defaultProps = {
+  title: "ENIGMA | Art Blog",
+  description: "Art portfolio for artist ENIGMA",
+  keywords: "art, painting, blog",
+};
